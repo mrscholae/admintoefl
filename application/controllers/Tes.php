@@ -82,7 +82,7 @@ class Tes extends CI_Controller {
         foreach ($record as $i => $record) {
             $users_record[$i] = $record;
             $users_record[$i]['id_hasil'] = md5($record['id_tes']);
-            $users_record[$i]['link'] = 'https://toefl.alazharpare.com/soal/id/'.md5($record['id_tes']);
+            $users_record[$i]['link'] = 'https://toefltest.id/soal/id/'.md5($record['id_tes']);
             $users_record[$i]['tgl_tes'] = date("d-M-Y", strtotime($record['tgl_tes']));
             $users_record[$i]['tgl_pengumuman'] = $this->hari_ini(date("D", strtotime($record['tgl_pengumuman']))) . ", " . $this->tgl_indo(date("d-M-Y", strtotime($record['tgl_pengumuman'])));
             $users_record[$i]['peserta'] = COUNT($this->Main_model->get_all("peserta_toefl", ["id_tes" => $record['id_tes']]));
