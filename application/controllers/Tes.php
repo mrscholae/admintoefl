@@ -44,6 +44,24 @@ class Tes extends CI_Controller {
         $this->load->view("pages/tes/list-tes", $data);
     }
 
+    // public function hasil($id){
+    //     // navbar and sidebar
+    //     $data['menu'] = "Tes";
+
+    //     // for title and header 
+    //     $data['title'] = "List Hasil Tes";
+
+    //     $respon = $this->Main_model->get_all("peserta_toefl", ["md5(id_tes)" => $id]);
+    //     $data['respon'] = [];
+    //     foreach ($respon as $i => $respon) {
+    //         $data['respon'][$i] = $respon;
+    //         $jawaban = explode("###", $respon['text']);
+    //         $data['respon'][$i]['text'] = $jawaban;
+    //     }
+
+    //     $this->load->view("pages/tes/hasil-tes", $data);
+    // }
+
     public function hasil($id){
         // navbar and sidebar
         $data['menu'] = "Tes";
@@ -51,7 +69,14 @@ class Tes extends CI_Controller {
         // for title and header 
         $data['title'] = "List Hasil Tes";
 
-        $respon = $this->Main_model->get_all("peserta_toefl", ["md5(id_tes)" => $id]);
+		$jumlah_data = COUNT($this->Main_model->get_all("peserta_toefl", ["md5(id_tes)" => $id]));
+		
+		$config['base_url'] = base_url().'tes/hasil/'.$id.'/';
+		$config['total_rows'] = $jumlah_data;
+		$config['per_page'] = 600;
+		$from = $this->uri->segment(4);
+		$this->pagination->initialize($config);
+        $respon = $this->Main_model->get_all_limit("peserta_toefl", ["md5(id_tes)" => $id], "", "", $from, $config['per_page']);
         $data['respon'] = [];
         foreach ($respon as $i => $respon) {
             $data['respon'][$i] = $respon;
