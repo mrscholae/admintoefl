@@ -771,7 +771,9 @@
             <tr>
                 <th rowspan="2" style="padding: 10px">No</th>
                 <th rowspan="2" style="padding: 10px">Nama Lengkap</th>
-                <th rowspan="2" style="padding: 10px">TTL</th>
+                <th rowspan="2" style="padding: 10px">Gender</th>
+                <th rowspan="2" style="padding: 10px">Tempat Lahir</th>
+                <th rowspan="2" style="padding: 10px">Tgl Lahir</th>
                 <th rowspan="2" style="padding: 10px">Alamat</th>
                 <th rowspan="2" style="padding: 10px">Alamat Pengiriman</th>
                 <th rowspan="2" style="padding: 10px">No Whatsapp</th>
@@ -799,7 +801,9 @@
                 <tr>
                     <td style="padding: 10px"><?= $no++?></td>
                     <td style="padding: 10px"><?= ucwords(strtolower($respon['nama']))?></td>
-                    <td style="padding: 10px"><?= ucwords(strtolower($respon['t4_lahir'])) . ", " . tgl_indo(date("d-m-Y", strtotime($respon['tgl_lahir'])))?></td>
+                    <td style="padding: 10px"><?= ucwords(strtolower($respon['jk']))?></td>
+                    <td style="padding: 10px"><?= ucwords(strtolower($respon['t4_lahir']))?></td>
+                    <td style="padding: 10px"><?= tgl_indo(date("d-m-Y", strtotime($respon['tgl_lahir'])))?></td>
                     <td style="padding: 10px"><?= ucwords(strtolower($respon['alamat']))?></td>
                     <td style="padding: 10px"><?= ucwords(strtolower($respon['alamat_pengiriman']))?></td>
                     <td style="padding: 10px"><?= $respon['no_wa']?></td>
