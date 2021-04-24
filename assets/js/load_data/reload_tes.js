@@ -77,6 +77,7 @@ function createTable(data,sno){
                     <p><i class="fa fa-info-circle text-info mr-2"></i> `+data[index].status+`</p>
                     <p><i class="fa fa-file-alt text-success mr-3"></i> Soal `+data[index].tipe_soal+`</p>
                     <p><i class="fa fa-stopwatch text-dark mr-3"></i> `+data[index].waktu+` (menit)</p>
+                    <p><i class="fa fa-clipboard text-dark mr-3"></i> `+data[index].catatan+`</p>
                     <p><i class="fa fa-key text-danger mr-2"></i> `+data[index].password+`</p>
                     <p><i class="fa fa-users text-dark mr-2"></i> `+data[index].peserta+` Peserta</p>
                     <p><i class="fa fa-link text-primary mr-2"></i> `+data[index].link+`</p>

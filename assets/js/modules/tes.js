@@ -14,6 +14,7 @@ $("#btnAddTes").click(function(){
             let tipe_soal = $("#tipe_soal_add").val();
             let waktu = $("#waktu_add").val();
             let password = $("#password_add").val();
+            let catatan = $("#catatan_add").val();
 
             let eror = required("#formAddTes");
             
@@ -24,7 +25,7 @@ $("#btnAddTes").click(function(){
                     text: 'lengkapi isi form terlebih dahulu'
                 })
             } else {
-                data = {tgl_tes: tgl_tes, tgl_pengumuman: tgl_pengumuman, tipe_soal: tipe_soal, password: password, waktu: waktu}
+                data = {tgl_tes: tgl_tes, tgl_pengumuman: tgl_pengumuman, tipe_soal: tipe_soal, password: password, waktu: waktu, catatan: catatan}
                 let result = ajax(url_base+"tes/add_tes", "POST", data);
 
                 if(result == 1){
@@ -64,6 +65,7 @@ $(document).on("click",".btnEditTes", function(){
     $("#password_edit").val(result.password);
     $("#waktu_edit").val(result.waktu);
     $("#status_edit").val(result.status);
+    $("#catatan_edit").val(result.catatan);
 })
 
 // ketika menyimpan hasil edit tes 
@@ -85,6 +87,7 @@ $("#btnEditTes").click(function(){
             let password = $("#password_edit").val();
             let waktu = $("#waktu_edit").val();
             let status = $("#status_edit").val();
+            let catatan = $("#catatan_edit").val();
             
             let eror = required("#formEditTes");
             
@@ -95,7 +98,8 @@ $("#btnEditTes").click(function(){
                     text: 'lengkapi isi form terlebih dahulu'
                 })
             } else {
-                data = {id_tes: id_tes, tgl_tes: tgl_tes, tgl_pengumuman: tgl_pengumuman, tipe_soal: tipe_soal, password: password, status: status, waktu: waktu}
+            let status = $("#status_edit").val();
+                data = {id_tes: id_tes, tgl_tes: tgl_tes, tgl_pengumuman: tgl_pengumuman, tipe_soal: tipe_soal, password: password, status: status, waktu: waktu, catatan: catatan}
                 let result = ajax(url_base+"tes/edit_tes", "POST", data);
 
                 if(result == 1){

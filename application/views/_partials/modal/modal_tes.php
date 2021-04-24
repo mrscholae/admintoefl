@@ -22,9 +22,9 @@
                     <label for="tipe_soal_add">Tipe Soal</label>
                     <select name="tipe_soal" id="tipe_soal_add" class="form-control form-control-sm required">
                         <option value="">Pilih Tipe Soal</option>
-                        <option value="1">Soal 1</option>
-                        <option value="2">Soal 2</option>
-                        <option value="3">Soal 3</option>
+                        <option value="1">TOEFL 1</option>
+                        <option value="2">TOEFL 2</option>
+                        <option value="3">TOEFL 3</option>
                         <!-- <option value="4">Soal 4</option>
                         <option value="5">Soal 5</option> -->
                     </select>
@@ -32,6 +32,10 @@
                 <div class="form-group">
                     <label for="waktu_add">Waktu (menit)</label>
                     <input type="number" name="waktu" id="waktu_add" class="form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label for="">Catatan</label>
+                    <textarea name="catatan" id="catatan_add" class="form-control form-control-sm required"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="password_add" class="col-form-label">Password</label>
@@ -82,9 +86,9 @@
                     <label for="tipe_soal_edit">Tipe Soal</label>
                     <select name="tipe_soal" id="tipe_soal_edit" class="form-control form-control-sm required">
                         <option value="">Pilih Tipe Soal</option>
-                        <option value="1">Soal 1</option>
-                        <option value="2">Soal 2</option>
-                        <option value="3">Soal 3</option>
+                        <option value="1">TOEFL 1</option>
+                        <option value="2">TOEFL 2</option>
+                        <option value="3">TOEFL 3</option>
                         <!-- <option value="4">Soal 4</option>
                         <option value="5">Soal 5</option> -->
                     </select>
@@ -92,6 +96,10 @@
                 <div class="form-group">
                     <label for="waktu_edit">Waktu (menit)</label>
                     <input type="number" name="waktu" id="waktu_edit" class="form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label for="">Catatan</label>
+                    <textarea name="catatan" id="catatan_edit" class="form-control form-control-sm required"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="password_edit" class="col-form-label">Password</label>

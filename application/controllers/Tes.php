@@ -161,6 +161,7 @@ class Tes extends CI_Controller {
                 "tipe_soal" => $this->input->post("tipe_soal"),
                 "password" => $this->input->post("password"),
                 "waktu" => $this->input->post("waktu"),
+                "catatan" => $this->input->post("catatan"),
                 "status" => "Berjalan",
             ];
 
@@ -192,6 +193,7 @@ class Tes extends CI_Controller {
                 "tipe_soal" => $this->input->post("tipe_soal"),
                 "password" => $this->input->post("password"),
                 "waktu" => $this->input->post("waktu"),
+                "catatan" => $this->input->post("catatan"),
                 "status" => $this->input->post("status"),
             ];
 
