@@ -20,6 +20,9 @@
                         <tr>
                             <th ><center>No</center></th>
                             <th >Nama Peserta</th>
+                            <th >L</th>
+                            <th >S</th>
+                            <th >R</th>
                             <th >Nilai</th>
                             <th >Sertifikat</th>
                             <th >Sertifikat Polosan</th>

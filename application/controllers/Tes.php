@@ -226,6 +226,9 @@ class Tes extends CI_Controller {
             // skor 
             $skor = round((($this->istima($peserta->nilai_listening) + $this->tarakib($peserta->nilai_structure) + $this->qiroah($peserta->nilai_reading)) * 10) / 3);
             
+            $row[] = $this->istima($peserta->nilai_listening);
+            $row[] = $this->tarakib($peserta->nilai_structure);
+            $row[] = $this->qiroah($peserta->nilai_reading);
             $row[] = $skor;
 
             if($peserta->sertifikat == "") $sertifikat = '<a href="#addSertifikat" data-toggle="modal" class="btn btn-sm btn-success addSertifikat" data-id="'.$peserta->id.'"><i class="fa fa-award"></i> add</a>';

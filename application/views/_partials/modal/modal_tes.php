@@ -135,12 +135,28 @@
                     <input type="text" name="nama" class="form form-control form-control-sm required">
                 </div>
                 <div class="form-group">
+                    <label>Gender</label>
+                    <select name="jk" class="form form-control form-control-sm required">
+                        <option value="">Pilih Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
                     <label>Tempat Lahir</label>
                     <input type="text" name="t4_lahir" class="form form-control form-control-sm required">
                 </div>
                 <div class="form-group">
                     <label>Tgl Lahir</label>
                     <input type="date" name="tgl_lahir" class="form form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label>No. WA</label>
+                    <input type="text" name="no_wa" class="form form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="text" name="email" class="form form-control form-control-sm required">
                 </div>
                 <div class="form-group">
                     <label>Alamat Sertifikat</label>

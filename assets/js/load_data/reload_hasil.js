@@ -17,7 +17,7 @@ datatable = $('#dataTable').DataTable({
     //Set column definition initialisation properties.
     "columnDefs": [
     { 
-        "targets": [], //first column / numbering column
+        "targets": [0, 5, 7, 8, 9, 10], //first column / numbering column
         "orderable": false, //set not orderable
     },
     ],
