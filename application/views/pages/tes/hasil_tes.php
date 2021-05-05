@@ -8,6 +8,10 @@
             </div>
         </div>
     </div>
+    <div class="d-flex justify-content-start mb-3">
+        <a href="<?= base_url()?>tes/list_hard/<?= $id?>" target="_blank" class="btn btn-sm btn-success mr-3">List Hard File</a>
+        <a href="<?= base_url()?>tes/list_soft/<?= $id?>" target="_blank" class="btn btn-sm btn-success">List Soft File</a>
+    </div>
     <div class="card shadow mb-4" style="max-width: 1100px">
         <div class="card-body">
             <div id="reload">

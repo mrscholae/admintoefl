@@ -766,6 +766,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h3><?= $title?></h3>
     <table border=1 style="border-collapse: collapse">
         <thead>
             <tr>
