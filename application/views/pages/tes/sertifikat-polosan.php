@@ -46,28 +46,39 @@
         .qrcode{
             width: 210px;
 			position: absolute;
-            left: 550px;
-			bottom: 160px;
+            /*left: 550px;*/
+            /*left: 421px;*/
+            left: 433px;
+			/*bottom: 160px;*/
+			/*bottom: 152px;*/
+			bottom: 88px;
             font-size: 35px;
             word-spacing: 3px;
         }
 
         .nilai{
-            background-color: red;
+            /*background-color: gray;*/
             width: 95px;
 			position: absolute;
-            right: 212px;
-			bottom: 174px;
+            /*right: 212px;*/
+            /*right: 341px;*/
+            right: 329px;
+			/*bottom: 174px; -8 */ 
+			/*bottom: 166px; +2*/
+			bottom: 168px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .nama{
-            background-color: red;
+            /*background-color: gray;*/
             width: 700px;
 			position: absolute;
-            left: 330px;
+            /*left: 330px;*/
+            /*left: 201px;*/
+            /*left: 213px; -5*/
+            left: 208px;
 			top: 300px;
             font-size: 32px;
             font-family: 'rockb';
@@ -75,119 +86,163 @@
         }
 
         .ttl{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            right: 413px;
-			top: 355px;
+            /*right: 413px;*/
+            /*right: 542px;*/
+            right: 530px;
+			/*top: 355px;*/
+			/*top: 363px; -3*/
+			top: 360px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .t4{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            right: 229px;
-			top: 355px;
+            /*right: 229px;*/
+            /*right: 358px;*/
+            right: 346px;
+			/*top: 355px;*/
+			/*top: 363px; -3*/
+			top: 360px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
         
         .istima{
-            background-color: red;
+            /*background-color: gray;*/
             width: 95px;
 			position: absolute;
-            right: 212px;
-			bottom: 247px;
+            /*right: 212px;*/
+            /*right: 341px;*/
+            right: 329px;
+			/*bottom: 247px;*/
+			/*bottom: 239px; +3*/
+			bottom: 242px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
         
         .tarakib{
-            background-color: red;
+            /*background-color: gray;*/
             width: 95px;
 			position: absolute;
-            right: 212px;
-			bottom: 222px;
+            /*right: 212px;*/
+            /*right: 341px;*/
+            right: 329px;
+			/*bottom: 222px;*/
+			/*bottom: 214px; +3*/
+			bottom: 217px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
         
         .qiroah{
-            background-color: red;
+            /*background-color: gray;*/
             width: 95px;
 			position: absolute;
-            right: 212px;
-			bottom: 197px;
+            /*right: 212px;*/
+            /*right: 341px;*/
+            right: 329px;
+			/*bottom: 197px;*/
+			/*bottom: 189px; +3*/
+			bottom: 192px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .tgl{
-            background-color: red;
+            /*background-color: gray;*/
 			position: absolute;
-            left: 797px;
-			bottom: 126px;
+            /*left: 797px;*/
+            /*left: 668px;*/
+            left: 680px;
+			/*bottom: 126px;*/
+			/*bottom: 118px; +2*/
+			bottom: 120px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .no_doc{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            left: 464px;
-			top: 355px;
+            /*left: 464px;*/
+            /*left: 335px;*/
+            left: 347px;
+			/*top: 355px;*/ 
+			/*top: 363px; -3*/
+			top: 360px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .gender{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            left: 373px;
-			top: 407px;
+            /*left: 373px;*/
+            /*left: 244px;*/
+            left: 256px;
+			/*top: 407px;*/
+			/*top: 415px; -3*/
+			top: 412px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .country{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            left: 631px;
-			top: 407px;
+            /*left: 631px;*/
+            /*left: 502px;*/
+            left: 514px;
+			/*top: 407px;*/
+			/*top: 415px; -3*/
+			top: 412px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .language{
-            background-color: red;
+            /*background-color: gray;*/
             width: 129px;
 			position: absolute;
-            right: 210px;
-			top: 407px;
+            /*right: 210px;*/
+            /*right: 339px;*/
+            right: 327px;
+			/*top: 407px;*/
+			/*top: 415px; -3*/
+			top: 412px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
         }
 
         .tgl_akhir{
-            background-color: red;
+            /*background-color: gray;*/
 			position: absolute;
-            left: 797px;
-			bottom: 100px;
+            /*left: 797px;*/
+            /*left: 668px;*/
+            left: 680px;
+			/*bottom: 100px;*/
+			/*bottom: 92px; +2*/
+			bottom: 94px;
             font-size: 18px;
             font-family: 'rock';
             word-spacing: 3px;
