@@ -116,3 +116,155 @@
         </div>
     </div>
 </div>
+
+<!-- modal edit Tes  -->
+<div class="modal fade" id="editPeserta" tabindex="-1" role="dialog" aria-labelledby="editTesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editTesLabel">Edit Tes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form class="user" id="formEditTes">
+                <input type="hidden" class="form" name="id" id="id">
+                <div class="form-group">
+                    <label>Nama Peserta</label>
+                    <input type="text" name="nama" class="form form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label>Tempat Lahir</label>
+                    <input type="text" name="t4_lahir" class="form form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label>Tgl Lahir</label>
+                    <input type="date" name="tgl_lahir" class="form form-control form-control-sm required">
+                </div>
+                <div class="form-group">
+                    <label>Alamat Sertifikat</label>
+                    <textarea name="alamat" class="form form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Alamat Pengiriman</label>
+                    <textarea name="alamat_pengiriman" class="form form-control"></textarea>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <form action="" class="user">
+                <button type="button" class="btn btn-secondary btn-user" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-success btn-user btnEdit">Edit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal edit Tes  -->
+<div class="modal fade" id="addSertifikat" tabindex="-1" role="dialog" aria-labelledby="editTesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editTesLabel">Tambah Sertifikat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form class="user" id="formEditTes">
+                <input type="hidden" class="form" name="id" id="id">
+                <div class="form-group">
+                    <label>Sertifikat</label>
+                    <select name="sertifikat" class="form form-control form-control-sm required">
+                        <option value="">Pilih Sertifikat</option>
+                        <option value="Soft File">Soft File</option>
+                        <option value="Hard File">Hard File</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Nama Peserta</label>
+                    <input type="text" name="nama" class="form form-control form-control-sm required" readonly>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <form action="" class="user">
+                <button type="button" class="btn btn-secondary btn-user" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-success btn-user btnTambah">Tambah</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- modal edit Tes  -->
+<div class="modal fade" id="editSertifikat" tabindex="-1" role="dialog" aria-labelledby="editTesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editTesLabel">Edit Sertifikat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form class="user" id="formEditTes">
+                <input type="hidden" class="form" name="id" id="id">
+                <div class="form-group">
+                    <label>Sertifikat</label>
+                    <select name="sertifikat" class="form form-control form-control-sm required">
+                        <option value="">Pilih Sertifikat</option>
+                        <option value="Soft File">Soft File</option>
+                        <option value="Hard File">Hard File</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Nama Peserta</label>
+                    <input type="text" name="nama" class="form form-control form-control-sm required" readonly>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <form action="" class="user">
+                <button type="button" class="btn btn-secondary btn-user" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-success btn-user btnEdit">Edit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- upload gambar  -->
+<div class="modal fade" id="uploadGambar" tabindex="-1" role="dialog" aria-labelledby="editTesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="editTesLabel">Upload Foto</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form method="post" action="" enctype="multipart/form-data" class="myform">
+                <input type="hidden" name="id">
+                <div class="form-group">
+                    <label for="">Nama Peserta</label>
+                    <input type="text" name="nama" class="form-control form-control-sm" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="">Foto</label>
+                    <input type="file" name="file" id="file" class="form-control required">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <form action="" class="user">
+                <button type="button" class="btn btn-secondary btn-user" data-dismiss="modal">Tutup</button>
+                <button type="button" class="btn btn-success btn-user btnTambah">Tambah</button>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
