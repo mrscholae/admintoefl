@@ -101,12 +101,13 @@
         }
 
         .t4{
-            /*background-color: gray;*/
-            width: 129px;
+            /* background-color: red; */
+            <?php if(strlen($t4_lahir) < 12 ) echo 'width: 129px;';?>
 			position: absolute;
             /*right: 229px;*/
             /*right: 358px;*/
-            right: 346px;
+            /* right: 346px; -- */
+            left: 772px;
 			/*top: 355px;*/
 			/*top: 363px; -3*/
 			top: 360px;

@@ -83,9 +83,11 @@
         }
 
         .t4{
-            width: 129px;
+            /* background-color: red; */
 			position: absolute;
-            right: 229px;
+            <?php if(strlen($t4_lahir) < 12 ) echo 'width: 129px;';?>
+            /* right: 229px; */
+            left : 888px;
 			top: 355px;
             font-size: 18px;
             font-family: 'rock';
@@ -196,7 +198,7 @@
         <div class="nilai"><p style="text-align: center; margin: 0px"><b><?= round($skor)?></b></p></div>
         <div class="nama"><p style="text-align: center; margin: 0px"><?= $nama?></p></div>
         <div class="ttl"><p style="text-align: center; margin: 0px"><?= date("M d Y", strtotime($tgl_lahir))?></p></div>
-        <div class="t4"><p style="text-align: center; margin: 0px"><?= $t4_lahir?></p></div>
+        <div class="t4"><p style="text-align: center; margin: 0px;"><?= $t4_lahir?></p></div>
         <div class="gender"><p style="text-align: center; margin: 0px"><?= $jk?></p></div>
         <div class="country"><p style="text-align: center; margin: 0px">Indonesia</p></div>
         <div class="language"><p style="text-align: center; margin: 0px">Indonesia</p></div>
