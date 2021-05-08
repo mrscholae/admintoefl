@@ -27,6 +27,7 @@
                         <option value="3">TOEFL 3</option>
                         <option value="4">TOEFL 4</option>
                         <option value="5">TOEFL 5</option>
+                        <option value="6">TOEFL 6</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -91,6 +92,7 @@
                         <option value="3">TOEFL 3</option>
                         <option value="4">TOEFL 4</option>
                         <option value="5">TOEFL 5</option>
+                        <option value="6">TOEFL 6</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -128,7 +130,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <form class="user" id="formEditTes">
+            <form class="user">
                 <input type="hidden" class="form" name="id" id="id">
                 <div class="form-group">
                     <label>Nama Peserta</label>
@@ -189,7 +191,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <form class="user" id="formEditTes">
+            <form class="user">
                 <input type="hidden" class="form" name="id" id="id">
                 <div class="form-group">
                     <label>Sertifikat</label>
@@ -226,7 +228,7 @@
             </button>
         </div>
         <div class="modal-body">
-            <form class="user" id="formEditTes">
+            <form class="user">
                 <input type="hidden" class="form" name="id" id="id">
                 <div class="form-group">
                     <label>Sertifikat</label>

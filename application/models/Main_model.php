@@ -24,14 +24,14 @@ class Main_model extends CI_MODEL{
     }
 
     
-    public function get_all_limit($table, $where = "", $order = "", $by = "ASC", $rowno, $rowperpage){
+    public function get_all_limit($table, $where = "", $order = "", $by = "ASC", $row_no, $row_perpage){
         $this->db->from($table);
         if($where)
             $this->db->where($where);
         if($order)
             $this->db->order_by($order, $by);
 
-        $this->db->limit($rowperpage, $rowno);  
+        $this->db->limit($row_perpage, $row_no);  
         
         return $this->db->get()->result_array();
     }

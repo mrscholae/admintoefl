@@ -79,15 +79,15 @@ $("#btnEditTes").click(function(){
         cancelButtonText: 'Tidak'
     }).then(function (result) {
         if (result.value) {
-            
-            let id_tes = $("#id_tes_edit").val();
-            let tgl_tes = $("#tgl_tes_edit").val();
-            let tgl_pengumuman = $("#tgl_pengumuman_edit").val();
-            let tipe_soal = $("#tipe_soal_edit").val();
-            let password = $("#password_edit").val();
-            let waktu = $("#waktu_edit").val();
-            let status = $("#status_edit").val();
-            let catatan = $("#catatan_edit").val();
+            let form = "#formEditTes";
+            let id_tes = $(form+" #id_tes_edit").val();
+            let tgl_tes = $(form+" #tgl_tes_edit").val();
+            let tgl_pengumuman = $(form+" #tgl_pengumuman_edit").val();
+            let tipe_soal = $(form+" #tipe_soal_edit").val();
+            let password = $(form+" #password_edit").val();
+            let waktu = $(form+" #waktu_edit").val();
+            let status = $(form+" #status_edit").val();
+            let catatan = $(form+" #catatan_edit").val();
             
             let eror = required("#formEditTes");
             
@@ -98,7 +98,7 @@ $("#btnEditTes").click(function(){
                     text: 'lengkapi isi form terlebih dahulu'
                 })
             } else {
-            let status = $("#status_edit").val();
+                // let status = $("#status_edit").val();
                 data = {id_tes: id_tes, tgl_tes: tgl_tes, tgl_pengumuman: tgl_pengumuman, tipe_soal: tipe_soal, password: password, status: status, waktu: waktu, catatan: catatan}
                 let result = ajax(url_base+"tes/edit_tes", "POST", data);
 
