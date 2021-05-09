@@ -267,7 +267,7 @@ class Tes extends CI_Controller {
         $peserta = $this->Main_model->get_one("peserta_toefl", ["md5(id)" => $id]);
         $tes = $this->Main_model->get_one("tes", ["id_tes" => $peserta['id_tes']]);
         $peserta['jk'] = ucwords(strtolower($peserta['jk']));
-        $peserta['nama'] = strtoupper($peserta['nama']);
+        $peserta['nama'] = $peserta['nama'];
         $peserta['t4_lahir'] = ucwords(strtolower($peserta['t4_lahir']));
         $peserta['tahun'] = date('Y', strtotime($tes['tgl_tes']));
         $peserta['bulan'] = $this->getRomawi(date('m', strtotime($tes['tgl_tes'])));
