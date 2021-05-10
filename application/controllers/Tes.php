@@ -221,7 +221,7 @@ class Tes extends CI_Controller {
             $row[] = '<center>'.$no.'</center>';
 
             $url = base_url();
-            $row[] = "<a href='#uploadGambar' class='uploadGambar' data-toggle='modal' data-id='{$peserta->id}'><img src='{$url}assets/foto/{$peserta->file}' width='25'></a>".ucwords(strtolower($peserta->nama));
+            $row[] = "<a href='#uploadGambar' class='uploadGambar' data-toggle='modal' data-id='{$peserta->id}'><img src='{$url}assets/foto/{$peserta->file}' width='25'></a>".$peserta->nama;
 
             // skor 
             $skor = round((($this->istima($peserta->nilai_listening) + $this->tarakib($peserta->nilai_structure) + $this->qiroah($peserta->nilai_reading)) * 10) / 3);
