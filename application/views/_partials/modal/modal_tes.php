@@ -28,6 +28,7 @@
                         <option value="4">TOEFL 4</option>
                         <option value="5">TOEFL 5</option>
                         <option value="6">TOEFL 6</option>
+                        <option value="7">TOEFL 7</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -93,6 +94,7 @@
                         <option value="4">TOEFL 4</option>
                         <option value="5">TOEFL 5</option>
                         <option value="6">TOEFL 6</option>
+                        <option value="7">TOEFL 7</option>
                     </select>
                 </div>
                 <div class="form-group">
