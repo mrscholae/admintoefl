@@ -267,8 +267,8 @@
         <div class="ttl"><p style="text-align: center; margin: 0px"><?= date("M d Y", strtotime($tgl_lahir))?></p></div>
         <div class="t4"><p style="text-align: center; margin: 0px"><?= $t4_lahir?></p></div>
         <div class="gender"><p style="text-align: center; margin: 0px"><?= $jk?></p></div>
-        <div class="country"><p style="text-align: center; margin: 0px">Indonesia</p></div>
-        <div class="language"><p style="text-align: center; margin: 0px">Indonesia</p></div>
+        <div class="country"><p style="text-align: center; margin: 0px"><?= $country?></p></div>
+        <div class="language"><p style="text-align: center; margin: 0px"><?= $language?></p></div>
         <div class="istima"><p style="text-align: center; margin: 0px"><?= $istima?></p></div>
         <div class="tarakib"><p style="text-align: center; margin: 0px"><?= $tarakib?></p></div>
         <div class="qiroah"><p style="text-align: center; margin: 0px"><?= $qiroah?></p></div>
